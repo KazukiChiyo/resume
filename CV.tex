@@ -1,0 +1,284 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Kexuan (Klaus) Zou}
+\newcommand{\CVTitle}{Klaus' Resume}
+\newcommand{\CVNote}{Resume compiled on {\today}}
+\newcommand{\CVWebpage}{github.com/KazukiChiyo}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{https://www.google.com/maps/place/203+S+6th+St+%23301,+Champaign,+IL+61820/data=!4m2!3m1!1s0x880cd74138dff279:0xe4f8a0e84ef4eba7?sa=X&ved=0ahUKEwiX05qPhP_RAhVBxYMKHT6sAAMQ8gEIGzAA}
+{203 S 6th St, Apt 301, Champaign, IL, 61820}
+\par
+\href{mailto:kzou3@illinois.edu}
+{kzou3@illinois.edu}
+\,\SubBulletSymbol\,
++1\,(217)\,450-1321
+\,\SubBulletSymbol\,
+\href{https://github.com/KazukiChiyo}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+%%%%%%%%%%%%%%%
+%% OBJECTIVE %%
+%%%%%%%%%%%%%%%
+\Section
+{Objective}
+{Objective}
+{PDF:Objective}
+\Entry
+To obtain an internship in the realm of Computer Engineering starting in summer 2018, and to further leverage my enthusiasm and knowledge in software development.
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\textbf{University of Illinois at Urbana-Champaign},
+Champaign, IL.
+
+\Gap
+\BulletItem
+Bachelor of Science in Computer Engineering
+\hfill
+\DatestampYMD{2018}{05}{15}
+\begin{Detail}
+\SubBulletItem
+Cumulative GPA: 3.60 / 4.00
+\SubBulletItem
+Main subjects: Data Structure, Digital Systems, Artificial Intelligence, Algorithm and Computation, Probability Theory.
+\SubBulletItem
+Focuses:
+Algorithms, Image Processing, Data Analysis, Machine Learning.
+\end{Detail}
+
+\Gap
+\BulletItem
+Minor in Mathematics
+\hfill
+\DatestampYMD{2017}{12}{15}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RELATED EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\Section
+{Related Experience}
+{Related Experience}
+{PDF:Related Experience}
+
+\Entry
+\textbf{Image Processing Researcher}, University of Illinois, Champaign, IL.
+
+\Gap
+\BulletItem
+Computer Vision \& Robotics Lab
+\hfill
+\DatestampYMD{2017}{01}{12} --
+\DatestampYMD{Present}{0}{0}
+\begin{Detail}
+\SubBulletItem
+Analyze the blurry images taken by several drones and yield various algorithms based on MATLAB on the reconstruction of noisy, blurred images.
+\SubBulletItem
+Evaluate resulting images with PSNR (Peak Signal to Noise Ratio) and choose the best possible implementation regarding time and space complexity.
+\end{Detail}
+
+
+\Entry
+\textbf{Hardware Engineer Intern}, Shenzhen, China.
+
+\Gap
+\BulletItem
+Risecomm Microelectronics (Shenzhen) Co., Ltd.
+\hfill
+\DatestampYMD{2017}{05}{23} --
+\DatestampYMD{2017}{06}{23}
+\begin{Detail}
+\SubBulletItem
+Test reliability of several controller chips based on PLC (Power-line Communication) technology. Improve the existing chips with new modules to withstand electrical surges.
+\SubBulletItem
+Develop testing software for anti-theft power cables, which samples and interprets network packets sent through power cables into hexadecimal strings.
+\end{Detail}
+
+\Entry
+\textbf{Software Engineer Intern}, Hangzhou, China.
+
+\Gap
+\BulletItem
+Insigma Centralsoft (Hangzhou) Co., Ltd.
+\hfill
+\DatestampYMD{2017}{06}{27} --
+\DatestampYMD{2017}{07}{23}
+\begin{Detail}
+\SubBulletItem
+Assist \textbf{A}dministration of \textbf{I}ndustry and \textbf{C}ommerce with integrating transactions into interactive databases, fix runtime errors of these databases and monitor unauthorized transactions.
+\SubBulletItem
+Develop website to provide data exchange platform for companies with valid business license to query or update information with the main database.
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER EXPERIENCES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+\Section
+{Other Experience}
+{Other Experience}
+{PDF:Other Experience}
+\Entry
+\textbf{Teacher's Assistant}, Hangzhou, China.
+
+\Gap
+\BulletItem
+Thinktown Education, Ltd.
+\hfill
+\DatestampYMD{2014}{06}{14} --
+\DatestampYMD{2014}{08}{14}
+\begin{Detail}
+\SubBulletItem
+Assist student with studying English vocabulary and reading skills, provide students with advice in exam preparation.
+\SubBulletItem
+Teach Math and help students with algebra and geometry.
+\end{Detail}
+
+
+\Entry
+\textbf{Student Worker}, University of Illinois, Champaign, IL.
+
+\Gap
+\BulletItem
+University Housing
+\hfill
+\DatestampYMD{2016}{01}{16} --
+\DatestampYMD{2016}{03}{16}
+\begin{Detail}
+\SubBulletItem
+Serve beverages and ice-cream at Ikenberry Dining Hall. Help customers with their requests and solve related issues.
+\SubBulletItem
+Also coordinate different teams, cleanse utensils and tables.
+\end{Detail}
+
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Section
+{Awards \& Honors}
+{Awards \& Honors}
+{PDF:AwardsandHonors}
+
+\BulletItem
+Dean's List,
+College of Engineering
+\hfill
+\begin{Detail}
+\Item
+For attaining a semester GPA of top 20\%, 2 semesters.
+\end{Detail}
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+Mandarin: Native.
+
+\Gap
+\BulletItem
+English: Fluent (speaking, reading, writing).
+
+\Gap
+\BulletItem
+Cantonese: Intermediate (speaking, reading, writing).
+
+\Gap
+\BulletItem
+Japanese: Limiting (speaking, reading, writing).
+
+\Gap
+\BulletItem
+German: Limiting (speaking, reading, writing).
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Technical Skills}
+{Technical Skills}
+{PDF:TechnicalSkills}
+
+\Entry
+\BulletItem
+Programming languages: C, C++, SystemVerilog, {\LaTeX}, MATLAB, Assembly, Python, Java, SQL, HTML5 \& CSS, Javascript.
+\BulletItem
+Operating Systems: macOS, Linux, Windows.
+
+\end{Body}
+\end{document}
